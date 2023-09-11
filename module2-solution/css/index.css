@@ -1,0 +1,107 @@
+body {
+    font-family: "Berlin Sans FB";
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.mobileTitle {
+    text-align: left;
+    font-family: Calibri;
+    font-size: 1.5rem;
+    display: none;
+    margin-left: 1rem;
+}
+.menuList {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.textBlock {
+    border: 1px solid;
+    background-color: lightgrey;
+    position: relative;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.textBlock:hover {
+    overflow-y: scroll;
+    cursor: row-resize;
+}
+
+.textBlock p {
+    margin: 3rem 1rem;
+}
+
+.itemTitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: 1px solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+}
+
+.mobileItemTitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    display: none;
+    text-align: center;
+}
+.title1 {
+    background-color: lightpink;
+}
+
+.title2 {
+    background-color: orange;
+}
+
+.title3 {
+    background-color: lightyellow;
+}
+
+@media (max-width: 767px) {
+    .pageTitle {
+        display: none;
+    }
+    .mobileTitle {
+        display: block;
+    }
+    .menuList {
+        flex-direction: column;
+    }
+    .itemTitle {
+        display: none;
+    }
+    .mobileItemTitle {
+        display: block;
+    }
+    .textBlock p {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .menuList {
+        flex-wrap: wrap;
+    }
+    .paragraph1 {
+        width: 48%;
+    }
+
+    .paragraph2 {
+        width: 48%;
+        margin-left: auto;
+    }
+
+    .paragraph3 {
+        width: 100%;
+    }
+}
