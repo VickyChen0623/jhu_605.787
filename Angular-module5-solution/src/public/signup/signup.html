@@ -55,6 +55,9 @@
           </span>
         <br>
 
+        <div ng-if="signUpCtrl.submitted">
+            Your information has been saved
+        </div>
         <button
                 ng-disabled="signUpForm.$invalid"
                 ng-click="signUpCtrl.submit()">Submit</button>

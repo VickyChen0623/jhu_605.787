@@ -23,7 +23,9 @@
                 favItem.name = response.name;
                 favItem.description = response.description;
                 favItem.categoryShortName = category_short_name;
-                UserService.setUserInfo({...$ctrl.user, favItem})
+                UserService.setUserInfo({...$ctrl.user, favItem});
+
+                $ctrl.submitted = true;
             });;
         };
     }
